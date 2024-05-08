@@ -74,7 +74,7 @@ el encabezado cambie de color */
 }
 
 #banner{
-    background-image: url('../img/banner-bg.jpg');
+    background-image: url('../img/pc.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -99,7 +99,7 @@ encabezado, ancho y z-index -------------------------------------------*/
     z-index: 9999;
 }
 
-.btn-cac{
+.btn-cyt{
     background-color: var(--primary-color);
     padding: 10px;
     border-radius: 10px;
@@ -110,14 +110,33 @@ encabezado, ancho y z-index -------------------------------------------*/
     max-width: 1200px;
     margin: 0 auto;
 }
+/* Centra el texto que info sobre películas 
+y series ilimitadas */
+.d-flex{
+    display: flex;
+    flex-direction: row; /*eje principal de flex*/
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: lightblue;
 
+}
+.img-banner{
+    display: flex;
+    flex-direction: row; /*eje principal de flex*/
+    justify-content: space-between; /*espacio entre los elementos*/
+    align-items: center;
+    height: 80%;
+    background-color: lightblue;
+}
 /* Alinea al centro el botón de registrarse */
 .card-banner{
+    justify-content: left;
+    justify-items: center;
     margin: 0 auto;
     text-align: center;
-    padding: 0px 160px;
+    width: 150vw;
 }
-
 
 .input-search {
     background-color: var(--bg-input-color);
@@ -245,7 +264,7 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
     color: var(--secondary-color) ;
 }
 
-.btn-cac:hover{
+.btn-cyt:hover{
     color:var(--secondary-color)!important;
     border: 2px solid var(--secondary-color);
 }
@@ -429,15 +448,6 @@ nav{
     display: flex;
     gap:30px;
     list-style: none;
-}
-
-/* Centra el texto que info sobre películas 
-y series ilimitadas */
-.d-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 /* Se agrega un scroll */
