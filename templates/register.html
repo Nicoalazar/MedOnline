@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- vinculación con estilos y favicon -->
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/register-style.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
     <title>Consultas y turnos</title>
     <!-- vinculación con google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,8 +43,8 @@
     <main>
 
         <!-- form-wrapper: formulario -->
-        <section id="form-wrapper">
-            <form action="#" id="formRegister" method="GET" novalidate>
+        <section id="banner" class="form-wrapper">
+            <form id="formRegister">
                 <div class="form-control">
                     <label>Nombre</label>
                     <input type="text" required name="firstname" id="firstname">
@@ -59,43 +59,41 @@
                     <label>Email</label>
                     <input type="email" required name="email" id="email">
                 </div>
-                <!-- Agregar telefono -->
-                <!-- especialidades -->
-                <!-- cobertura medica -->
-                <!-- completar textarea -->
-                <textarea name="message" id=""></textarea>
-                <div class="error" id="error-email"></div>
                 <div class="form-control">
-                    <label>Contraseña</label>
-                    <input type="password" required name="password" id="password">
-                </div>
-                <div class="error" id="error-password"></div>
-                <div class="form-control">
-                    <label id="label-birthdate">Fecha de Nacimiento</label>
-                    <input type="date" required name="birthdate" id="birthdate">
+                    <label>Telefóno</label>
+                    <input type="tel" required name="phone" id="phone">
                 </div>
                 <div class="form-control">
-                    <select name="country" id="country" class="form-select">
-                        <option value="">País</option>
-                        <option value="AR">Argentina</option>
-                        <option value="BO">Bolivia</option>
-                        <option value="BR">Brasil</option>
-                        <option value="CH">Chile</option>
-                        <option value="CO">Colombia</option>
-                        <option value="EC">Ecuador</option>
-                        <option value="PY">Paraguay</option>
-                        <option value="PE">Perú</option>
-                        <option value="UY">Uruguay</option>
-                        <option value="VE">Venezuela</option>
+                    <label>Especialidades</label>
+                    <select name="speciality" required id="especialities">
+                        <option value="">Especialidad</option>
+                        <option value="General">General</option>
+                        <option value="Pediatria">Pediatria</option>
+                        <option value="Traumatologia">Traumatologia</option>
                     </select>
                 </div>
-                <div class="form-terms">
+                <div class="form-control">
+                    <label>¿Tiene Cobertura Médica?</label>
+                    <div>
+                        <input type="radio" id="coverage" name="coverage" value="Si">
+                        <label for="coverage">Sí</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="not-coverage" name="coverage" value="No">
+                        <label for="not-coverage">No</label>
+                    </div>
+                </div>                
+                <div class="form-control">
+                    <label>Mensaje</label>
+                    <textarea name="message" id=""></textarea>
+                </div>
+                <div class="form-control">
                     <div class="terms">
-                        <input type="checkbox" id="terms">
+                        <input type="checkbox" required id="terms">
                         <label for="terms">Acepto términos y condiciones</label>
                     </div>
                 </div>
-                <button type="submit">Eviar Mensaje</button>
+                <button class="btn-cyt" type="submit">Enviar Mensaje</button>
                 <div class="form-help">
                     <a href="#">Necesitas ayuda?</a>
                 </div>
@@ -103,8 +101,11 @@
         </section>
 
     </main>
-    
-    <footer></footer>
+<footer id="footer">
+    <a href="">Términos y condiciones</a>
+    <a href="">Preguntas Frecuentes</a>
+    <a href="">Ayuda</a>
+</footer>
     
 </body>
 </html>
