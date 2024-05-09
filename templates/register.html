@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - CAC-Movies</title>
+    <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <title>Consultas y turnos</title>
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- vinculación fontawesome -->
+    <script src="https://kit.fontawesome.com/76808fbf34.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-    <!-- Encabezado -->
-    <header>
+<body><!-- Encabezado -->
+    <header class="header">
         <nav>
-            <div class="logo">
-                <a href="/">
-                    <!-- Más adelante se agregará un ícono -->
-                    <span class="logo-texto">
-                        CAC - Movies
-                    </span>
+            <!-- Logo -->
+            <div id="logo">
+                <a href="../index.html">
+                    <i class="fa-regular fa-hospital fa-beat"></i>
+                    <span class="logo-text">Clínica Online</span>
                 </a>
             </div>
+            <!-- hipervínculos del menú -->
+            <ul class="nav-links">
+                <li><a href="../index.html">Consultas de Urgencias</a></li>
+                <li><a href="#" class="btn-cyt">Consultas y turnos</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user-doctor fa-beat"></i>
+                        <span class="especialities-text">Especialidades</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
 
     <!-- Contenido -->
@@ -40,6 +59,11 @@
                     <label>Email</label>
                     <input type="email" required name="email" id="email">
                 </div>
+                <!-- Agregar telefono -->
+                <!-- especialidades -->
+                <!-- cobertura medica -->
+                <!-- completar textarea -->
+                <textarea name="message" id=""></textarea>
                 <div class="error" id="error-email"></div>
                 <div class="form-control">
                     <label>Contraseña</label>
@@ -71,7 +95,7 @@
                         <label for="terms">Acepto términos y condiciones</label>
                     </div>
                 </div>
-                <button type="submit">Registrarse</button>
+                <button type="submit">Eviar Mensaje</button>
                 <div class="form-help">
                     <a href="#">Necesitas ayuda?</a>
                 </div>
