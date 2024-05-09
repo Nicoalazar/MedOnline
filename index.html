@@ -7,7 +7,7 @@
     <!-- vinculación con estilos y favicon -->
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
-    <title>Clinica Online</title>
+    <title>Clínica Online</title>
     <!-- vinculación con google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,67 +17,54 @@
 </head>
 
 <body>
-
     <!-- Encabezado -->
     <header class="header">
-
         <nav>
             <!-- Logo -->
             <div id="logo">
-                <a href="/">
-                    <!-- Más adelante se aplicará estilo especifico
-                        al texto y se agregará un ícono -->
-                    <!-- <i class="fas fa-film"></i> -->
+                <a href="#">
                     <i class="fa-regular fa-hospital fa-beat"></i>
-                    <span class="logo-text">Clinica Online</span>
+                    <span class="logo-text">Clínica Online</span>
                 </a>
             </div>
-
             <!-- hipervínculos del menú -->
             <ul class="nav-links">
                 <li><a href="#urgencies">Consultas de Urgencias</a></li>
                 <li><a href="./templates/register.html" class="btn-cyt">Consultas y turnos</a></li>
                 <li>
                     <a href="#">
-                        <!-- Más adelante se aplicará estilo especifico
-                        al texto y se agregará un ícono -->
-                        <!-- <i class="fas fa-sign-in-alt"></i> -->
                         <i class="fa-solid fa-user-doctor fa-beat"></i>
-                        <span class="login-text">Especialidades</span>
+                        <span class="especialities-text">Especialidades</span>
                     </a>
                 </li>
             </ul>
         </nav>
 
     </header>
-
     <!-- Contenido -->
     <main>
-
-        <!-- banner: una sección prominente en la 
-            parte superior de una página que puede
-            contener información destacada, como anuncios,
-            mensajes importantes, o un diseño gráfico distintivo. -->
-        <section id="banner" class="d-flex">
-            
+        <!-- Banner -->
+        <section id="banner" class="d-flex">          
             <div class="card-banner container">
-                <h1>Clinica Online</h1>
-                <h2>Accedé a la mejor atención sin complicaciones</h2>
-                    <h3 class="title-list">Tele-Consultas Médicas</h3>
+                <div class="tittle">
+                    <h1>Clínica Online</h1>
+                    <h2>Accedé a la mejor atención sin complicaciones</h2>
+                </div>   
+                <div class="tittle-text">    
+                    <h3><i class="fa-solid fa-heart-circle-check"></i>  Tele-Consultas Médicas</h3>
                     <h4>Puede realizar consultas médicas sin moverse de su casa</h4>
-                    <h3 class="title-list">Equipo Médico Multidisciplinario</h3>
+                    <h3><i class="fa-solid fa-heart-circle-check"></i>  Equipo Médico Multidisciplinario</h3>
                     <h4>Contamos con atención en diversas especialidades</h4>
-                    <h3 class="title-list">Estudios Médicos y Diagnosticos a Domicilio</h3>
+                    <h3><i class="fa-solid fa-heart-circle-check"></i>  Estudios Médicos y Diagnosticos a Domicilio</h3>
                     <h4>Electrocardiogramas, ecografias, radiología y laboratorios</h4>
-                <a href="./templates/register.html" class="btn-cyt">Consultas y turnos</a>
+                    <a href="./templates/register.html" class="btn-cyt">Consultas y turnos</a>
+                </div>
             </div>
             <div class="img-banner">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt beatae quas facilis facere veniam. Ad perferendis aspernatur repellat possimus temporibus doloremque aperiam itaque, quis dicta ex voluptates consequuntur quibusdam expedita.</p>
-                <img src="./static/imgs/doctor.jpg" alt="">
+                <!-- Insertar carrousel en lugar del <p>-->
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aspernatur sit dolor ullam non qui, doloremque fugiat eius quasi deleniti! Nam commodi, excepturi doloremque deleniti numquam quod eius laborum nostrum!</p>
             </div>
-
         </section>
-
         <!-- search: sección que contiene un mensaje de búsqueda
             y un campo de entrada de texto para que los usuarios
             ingresen lo que desean buscar en un sitio web
@@ -86,266 +73,26 @@
             <h2 class="search-title">¿Qué especialista buscas?</h2>
             <input type="text" class="input-search" placeholder="Buscar...">
         </section>
-
-        <!-- popular: mostrar imágenes de las peliculas
-            con tendencia hoy -->
+        <!-- urgencias: mostrar las consultas de Urgencias -->
         <section id="urgencies">
-
             <!-- División contenedora del titulo
                 e imagenes -->
-            <div class="container" class="movies-grid">
-
-                <h2>Las tendencias de hoy</h2>
-                <!-- Div para mostrar todas las imagenes e info 
-                    de las películas -->
-                <div id="list-popular">
-
-                    <!-- División que mostrará imagen y detalle de la pelicula, mismo 
-                    formato para todas las peliculas -->
-                    <!-- pelicula 01 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 02 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- pelicula 03 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 04 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- pelicula 05 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 06 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- pelicula 07 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 08 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- pelicula 09 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 10 -->
-                    <div class="movie-item">
-                        <a href="./templates/detail-movie.html">
-                            <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
+            <div class="container" class="urgencies-grid">
+                <h2>Urgencias</h2>
+                <!-- Borrado 1 -->
             </div>
-
         </section>
-
-        <!-- top-rated: mostrar las películas más aclamadas-->
-        <section id="top-rated">
-
-             <!-- División contenedora del titulo
-                e imagenes -->
-                <div class="container">
-                
-                    <h2>Las más aclamadas.</h2>
-                    <!-- Div para mostrar todas las imagenes e info 
-                        de las películas -->
-                    <div id="list-top-rated" class="movies-scroller">
-                    
-                        <!-- Info de las películas mismo formato para todas -->
-                        <!-- pelicula 01 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="https://www.Dthemoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972 - 8.7</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 02 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="https://www.Dthemoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972 - 8.7</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 02 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="https://www.Dthemoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972 - 8.7</p>
-                            </div>
-                        </div>
-
-
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="https://www.Dthemoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972 - 8.7</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 03 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="https://www.Dthemoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972 - 8.7</p>
-                            </div>
-                        </div>
-
-
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="https://www.Dthemoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972 - 8.7</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 04 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="https://www.Dthemoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972 - 8.7</p>
-                            </div>
-                        </div>
-
-
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="https://www.Dthemoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972 - 8.7</p>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
-                        
-    
-                </div>
-
+        <!-- more info: mostrar info-->
+        <section id="more-info">
+         <!-- Borrado 2 -->
         </section>
     </main>
 
-    <footer id="footer">
-        <a href="">Términos y condiciones</a>
-        <a href="">Preguntas Frecuentes</a>
-        <a href="">Ayuda</a>
-    </footer>
+<footer id="footer">
+    <a href="">Términos y condiciones</a>
+    <a href="">Preguntas Frecuentes</a>
+    <a href="">Ayuda</a>
+</footer>
 
 </body>
 
