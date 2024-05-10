@@ -85,6 +85,8 @@ nav{
     padding: 10px;
     border-radius: 10px;
     color:#FFF;
+    font-family: 'Nunito', sans-serif;
+    border-style: none;
 }
 .btn-cyt:hover{
     color:var(--secondary-color)!important;
