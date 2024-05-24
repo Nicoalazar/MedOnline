@@ -234,13 +234,13 @@ nav {
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 920px) {
+@media (max-width: 1200px) {
     h2, .container h1, .container h3, .container h4 {
         font-size: 4vw;
     }
 
     .search-title {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     nav {
@@ -259,14 +259,21 @@ nav {
     .card-banner {
         width: 100%;
         margin-top: 10vw;
+        gap: 1.5rem;
     }
 
+    .card-banner .btn-cyt {
+        margin-bottom: 5vw;
+    }
     .slider-box {
         margin-right: 0;
     }
 
     .input-search {
         width: 90%;
+    }
+    #banner{
+        height: 100%;
     }
 }
 
@@ -294,7 +301,7 @@ nav {
     
     .btn-cyt {
         padding: 5px;
-        width: 100%;
+        width: 50%;
     }
 
     .d-flex {
@@ -303,7 +310,7 @@ nav {
     }
 
     .card-banner {
-        margin-top: 30vw;
+        margin-top: 10vw;
         width: 100%;
         gap: 1.5rem;
     }
@@ -315,7 +322,7 @@ nav {
     }
 
     .input-search {
-        width: 100%;
+        width: 90%;
     }
 
 }
