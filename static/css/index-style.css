@@ -49,6 +49,11 @@ h2 {
     left: 0;
     width: 100%;
     z-index: 9999;
+    transition: top 0.3s;
+}
+
+.header.hidden {
+    top: -100px;
 }
 
 nav {
@@ -267,7 +272,7 @@ nav {
 
 @media (max-width: 660px) {
     h2, .container h1, .container h3, .container h4 {
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
     .search-title {
@@ -289,6 +294,7 @@ nav {
     
     .btn-cyt {
         padding: 5px;
+        width: 100%;
     }
 
     .d-flex {
@@ -311,4 +317,5 @@ nav {
     .input-search {
         width: 100%;
     }
+
 }
