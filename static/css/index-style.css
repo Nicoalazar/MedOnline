@@ -258,7 +258,7 @@ nav {
 
     .card-banner {
         width: 100%;
-        margin-top: 10vw;
+        margin-top: 15vh;
         gap: 1.5rem;
     }
 
@@ -310,7 +310,7 @@ nav {
     }
 
     .card-banner {
-        margin-top: 10vw;
+        margin-top: 15vh;
         width: 100%;
         gap: 1.5rem;
     }
