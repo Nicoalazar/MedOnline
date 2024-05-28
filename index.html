@@ -80,7 +80,12 @@
               -->
         <section id="search" class="container">
             <h2 class="search-speciality">¿Qué especialista buscas?</h2>
-            <input type="text" class="input-search" placeholder="Buscar...">
+            <select name="speciality" id="especialities" class="input-search">
+                <option value="especialidad">Buscar...</option>
+            </select>
+            <div class="container" id="list-doctors">
+                <ul id="doctors"></ul>
+            </div>
         </section>
         <!-- urgencias: mostrar las consultas de Urgencias -->
         <section id="urgencies">
@@ -102,7 +107,6 @@
         <a href="">Preguntas Frecuentes</a>
         <a href="">Ayuda</a>
     </footer>
-    <script src="./static/Js/script.js"></script>
     <script src="./static/Js/app.js"></script>
 
 </body>

@@ -211,6 +211,22 @@ nav {
     justify-content: center;
     align-items: center;
 }
+#list-doctors {
+    margin-top: 10px;
+}
+
+#list-doctors ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#list-doctors li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 #footer a {
     color: white;
