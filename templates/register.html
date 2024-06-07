@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/register-style.css">
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
     <title>Consultas y turnos</title>
@@ -13,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <!-- vinculación fontawesome -->
     <script src="https://kit.fontawesome.com/76808fbf34.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body><!-- Encabezado -->
     <header class="header" id="header">
@@ -67,7 +70,7 @@
                     <div class="form-control">
                         <label>Especialidades</label>
                         <select name="speciality" required id="especialities">
-                            <option value="especialidad">Seleccione una especialidad</option>
+                            <option value="default">Seleccione una especialidad</option>
                         </select>
                     </div>
                     <div class="form-control">
@@ -82,14 +85,21 @@
                         </div>
                     </div>
                 </div>
+                <button type="submit">Buscar Médicos</button>
+            </form>
+            <div id="resultContainer"></div>
+            <ul id="notAvailableMessage"></ul>
+            <form id="selectAppointment">
                 <div class="right-form">                
                     <div class="form-control">
+                        <label for="doctorSelect">Médico:</label>
+                        <select id="doctorSelect"></select>
                         <label>Mensaje</label>
                         <textarea name="message" id=""></textarea>
                     </div>
                     <div class="form-control">
                         <label>Fecha del turno</label>
-                        <input type="date" required name="date" id="date">
+                        <input type="date" required name="date" id="time">
                     </div>
                     <div class="form-control">
                         <div class="terms">
@@ -99,7 +109,12 @@
                     </div>
                     <button class="btn-cyt" id="btn-submit" type="submit">Enviar Mensaje</button>
                 </div>
-            </form>           
+            </form>
+            <div id="appointmentResult"></div>           
+        </section>
+        <section id="appointment-history">
+            <h2>Historial de Citas</h2>
+            <!-- Historial de citas generado dinámicamente -->
         </section>
         <div class="form-help">
             <a href="#">Necesitas ayuda?</a>
@@ -110,6 +125,25 @@
         <a href="">Preguntas Frecuentes</a>
         <a href="">Ayuda</a>
     </footer>
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <h5 class="errorModal-title"></h5>
+            <p class="errorModal-body"></p>
+            <button type="reset" class="btn btn-danger" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h5 class="modal-title"></h5>
+            <p class="modal-body"></p>
+            <button type="reset" class="btn btn-success" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
     <script src="../static/Js/app.js"></script>
+    <script src="../static/Js/appointments.js"></script>
+    <script src="../static/Js/doctors.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
