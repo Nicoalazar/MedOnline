@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit">Buscar Médicos</button>
+                <button type="submit" class="btn-cyt">Buscar Médicos</button>
             </form>
             <div id="resultContainer"></div>
             <ul id="notAvailableMessage"></ul>
@@ -94,8 +94,6 @@
                     <div class="form-control">
                         <label for="doctorSelect">Médico:</label>
                         <select id="doctorSelect"></select>
-                        <label>Mensaje</label>
-                        <textarea name="message" id=""></textarea>
                     </div>
                     <div class="form-control">
                         <label>Fecha del turno</label>
@@ -104,10 +102,10 @@
                     <div class="form-control">
                         <div class="terms">
                             <input type="checkbox" required id="terms">
-                            <label for="terms">Acepto términos y condiciones</label>
+                            <label for="terms"><a href="#">Acepto términos y condiciones</a></label>
                         </div>
                     </div>
-                    <button class="btn-cyt" id="btn-submit" type="submit">Enviar Mensaje</button>
+                    <button class="btn-cyt" id="btn-submit" type="submit">Reservar Turno</button>
                 </div>
             </form>
             <div id="appointmentResult"></div>           
